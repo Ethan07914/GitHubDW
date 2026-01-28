@@ -1,0 +1,13 @@
+version: 2
+sources:
+  - name: github
+    database: bigquery-public-data
+    schema: github_repos
+    tables:
+      - name: sample_commits
+      - name: sample_contents
+      - name: sample_files
+      - name: languages
+      - name: licenses
+      - name: sample_repos
+
