@@ -33,5 +33,38 @@ models:
         data_tests:
           - unique
           - not_null
+  - name: repo__metric__fct
+    description: 'Fact table which holds metrics about github repositories'
+    columns:
+      - name: repo_metric_pk
+        description: 'Primary key, the unique identifier of a repository at a given time'
+        data_tests:
+          - unique
+          - not_null
+      - name: repo_fk
+        description: 'Foreign key, joins to repo__dim table'
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('repo__dim')
+                field: repo_pk
+      - name: license_fk
+        description: 'Foreign key, joins to license__dim table'
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('license__dim')
+                field: license_pk
+      - name: author_fk
+        description: 'Foreign key, joins to author__dim table'
+        data_tests:
+          #- not_null # Only 5 repos are in the commit table so unable to associate an author to all repos when using sample tables
+          - relationships:
+              arguments:
+                to: ref('author__dim')
+                field: author_pk
+
 
 
