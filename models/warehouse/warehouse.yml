@@ -1,0 +1,37 @@
+version: 2
+
+models:
+  - name: author__dim
+    description: 'Table with dimensions information authors of github repositories'
+    columns:
+      - name: author_pk
+        description: 'Primary key, the unique identifier of an author'
+        data_tests:
+          - unique
+          - not_null
+  - name: date__dim
+    description: 'Dimension view which holds different date formats from 1970-2040'
+    columns:
+      - name: date_pk
+        description: 'Primary key, unique identifier of a date (dd-mm-yy)'
+        data_tests:
+          - unique
+          - not_null
+  - name: license__dim
+    description: 'Table with dimensions information licenses that can be used in github repositories'
+    columns:
+      - name: license_pk
+        description: 'Primary key, the unique identifier of an license'
+        data_tests:
+          - unique
+          - not_null
+  - name: repo__dim
+    description: 'Table with dimensions information about github repositories'
+    columns:
+      - name: repo_pk
+        description: 'Primary key, the unique identifier of a repository'
+        data_tests:
+          - unique
+          - not_null
+
+

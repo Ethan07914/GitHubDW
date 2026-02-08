@@ -36,3 +36,9 @@ models:
       +enabled: true
       +materialized: table
       +schema: stg__github
+    warehouse:
+      +enabled: true
+      +materialized: table
+      +schema: dwh__github
+      date__dim:
+        +materialized: view
