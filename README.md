@@ -29,6 +29,7 @@ repositories are being used lawfully.
 ## Dashboard
 - A paginated report was created using Looker Studio connected to the BigQuery data warehouse.
 - Advanced data visualisations were used to report on Market Intelligence and Legal Compliance.
+- Link: https://lookerstudio.google.com/reporting/ed4e1d6b-6636-408d-b360-bd7348d02eae
 <img width="1078" height="809" alt="image" src="https://github.com/user-attachments/assets/6e29f80c-099d-4e9c-8faa-0f94cb263dc7" />
 
 <img width="1079" height="810" alt="image" src="https://github.com/user-attachments/assets/b97c9654-d4e8-4146-bfaa-2fe4f9b9e715" />
