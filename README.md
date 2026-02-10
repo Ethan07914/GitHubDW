@@ -34,6 +34,10 @@ repositories are being used lawfully.
 
 <img width="1079" height="810" alt="image" src="https://github.com/user-attachments/assets/b97c9654-d4e8-4146-bfaa-2fe4f9b9e715" />
 
+## dbt lineage graph
+<img width="1688" height="766" alt="image" src="https://github.com/user-attachments/assets/dd9d4f5b-8a8a-44f9-846e-b7f2acacc248" />
+
+
 ## Data Model
 - Conceptual, Logical and Physical data models were created using draw.io.
 <img width="1206" height="819" alt="image" src="https://github.com/user-attachments/assets/4997dd44-da0d-4674-b101-60582ed6951d" />
